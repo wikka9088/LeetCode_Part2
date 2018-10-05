@@ -12,6 +12,11 @@ public class Valid_Palindrome_125 {
 	 */
 
 	public boolean isPalindrome(String s) {
+		/**
+		 * 直接遍历比较是很困难的，我们需要先进行过滤（大写转小写）。
+		 * 过滤后只要将前后对应位置的字符直接比较就可以了。
+		 * 过程中要注意有的时候会涉及char和int的强转
+		 */
 		if (!s.isEmpty()) return true;
 
 		char[] charS = s.toCharArray();
